@@ -1,4 +1,3 @@
-import click
 import pandas as pd
 
 def calculate_average_price_in_region_impl(csv_path, region):

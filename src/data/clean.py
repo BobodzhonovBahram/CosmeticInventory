@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 df = pd.read_csv(r"C:\Users\vivar\PycharmProjects\Russia Real Estate2021\data\external\all_v2.csv")
 

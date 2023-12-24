@@ -2,7 +2,6 @@
 import click
 from src.features import my_filter_data
 from src.features import average_price_in_region
-import pandas as pd
 
 @click.group()
 def main():
