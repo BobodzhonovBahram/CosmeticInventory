@@ -1,13 +1,10 @@
+# my_filter_data.py
 import click
 import pandas as pd
 
+def run(csv_path, min_price, max_price, min_area, max_area):
+    filter_data(csv_path, min_price, max_price, min_area, max_area)
 
-@click.command()
-@click.argument('csv_path', type=click.Path(exists=True))
-@click.option('--min_price', type=float, help='Minimum price filter')
-@click.option('--max_price', type=float, help='Maximum price filter')
-@click.option('--min_area', type=float, help='Minimum area filter')
-@click.option('--max_area', type=float, help='Maximum area filter')
 def filter_data(csv_path, min_price, max_price, min_area, max_area):
     df = pd.read_csv(csv_path)
 
@@ -26,5 +23,14 @@ def filter_data(csv_path, min_price, max_price, min_area, max_area):
     print("Filtered Data:")
     print(filtered_data.head(10))
 
+@click.command()
+@click.argument('csv_path', type=click.Path(exists=True))
+@click.option('--min_price', type=float, help='Minimum price filter')
+@click.option('--max_price', type=float, help='Maximum price filter')
+@click.option('--min_area', type=float, help='Minimum area filter')
+@click.option('--max_area', type=float, help='Maximum area filter')
+def cli(csv_path, min_price, max_price, min_area, max_area):
+    run(csv_path, min_price, max_price, min_area, max_area)
+
 if __name__ == '__main__':
-    filter_data()
+    cli()

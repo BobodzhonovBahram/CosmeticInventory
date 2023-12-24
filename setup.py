@@ -1,4 +1,4 @@
-from setuptools import find_packages
+from setuptools import find_packages, setup
 
 setup(
     name='sber_ml_est',
