@@ -39,7 +39,10 @@ Project Organization
     │   │   └── make_dataset.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
+    │   │   ├── build_features.py
+    │   │   │── average_price_in_region.py <- User provides file path, region number; calculates average price per listing
+    │   │   │── my_filter_data.py <- User inputs file path and ad parameters, system displays relevant information 
+    │   │   │── square_feature.py <- Calculates the ratio of total area to kitchen area.
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
