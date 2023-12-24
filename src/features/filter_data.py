@@ -1,6 +1,7 @@
 import click
 import pandas as pd
 
+
 @click.command()
 @click.argument('csv_path', type=click.Path(exists=True))
 @click.option('--min_price', type=float, help='Minimum price filter')

@@ -1,7 +1,6 @@
 import click
 import pandas as pd
 
-
 def calculate_average_price_in_region_impl(df, region):
     region_data = df[df['region'] == region]
     region_data = region_data[region_data['price'].notna()]
