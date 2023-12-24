@@ -87,6 +87,11 @@ target/
 # Mypy cache
 .mypy_cache/
 
-data
+Russia Real Estate2021/data/
+Russia Real Estate2021/data/external/
+Russia Real Estate2021/data/interim/
+Russia Real Estate2021/data/processed/
+Russia Real Estate2021/data/raw/
+Russia Real Estate2021/data/
 .snakemake
 venv
